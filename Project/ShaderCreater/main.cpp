@@ -21,6 +21,8 @@ const uint32_t MaxEnumCount = 4;
 
 int main()
 {
+	fs::create_directory("Shader");
+
 	std::map<ShaderType, std::string> fileTagMap =
 	{
 		{ ShaderType::Vertex,	"VS" },

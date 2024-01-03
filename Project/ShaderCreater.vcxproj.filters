@@ -1,45 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
+    <Filter Include="Source">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="ヘッダー ファイル">
+    <Filter Include="Source\ShaderWriter">
+      <UniqueIdentifier>{22fb1d4a-8b21-4763-8f43-5300afd76143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\ShaderWriter">
+    <Filter Include="Header\ShaderWriter">
       <UniqueIdentifier>{77f5a6c4-4cf8-4efb-b15d-88e58ca9294e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\ShaderWriter">
-      <UniqueIdentifier>{22fb1d4a-8b21-4763-8f43-5300afd76143}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ShaderCreater\ShaderWriter\VertexPixel3D.cpp">
-      <Filter>ソース ファイル\ShaderWriter</Filter>
+      <Filter>Source\ShaderWriter</Filter>
     </ClCompile>
     <ClCompile Include="ShaderCreater\main.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="ShaderCreater\ShaderWriter\VertexPixel2D.cpp">
-      <Filter>ソース ファイル\ShaderWriter</Filter>
+      <Filter>Source\ShaderWriter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShaderCreater\ShaderWriter\ShaderWriter.h">
-      <Filter>ヘッダー ファイル\ShaderWriter</Filter>
+      <Filter>Header\ShaderWriter</Filter>
     </ClInclude>
     <ClInclude Include="ShaderCreater\ShaderWriter\VertexPixel3D.h">
-      <Filter>ヘッダー ファイル\ShaderWriter</Filter>
+      <Filter>Header\ShaderWriter</Filter>
     </ClInclude>
     <ClInclude Include="ShaderCreater\ShaderWriter\VertexPixel2D.h">
-      <Filter>ヘッダー ファイル\ShaderWriter</Filter>
+      <Filter>Header\ShaderWriter</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

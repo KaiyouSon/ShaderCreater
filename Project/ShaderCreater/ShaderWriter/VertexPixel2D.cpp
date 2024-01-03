@@ -2,7 +2,7 @@
 #include <fstream>
 #include <sstream>
 
-std::string VertexPixel2D::folderPath = "Template/VP2D";
+std::string VertexPixel2D::folderPath = "ShaderCreater/Template/VP2D";
 
 std::string VertexPixel2D::ReadFileContent(const std::ifstream& file)
 {

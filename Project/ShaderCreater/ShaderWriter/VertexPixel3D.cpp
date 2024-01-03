@@ -2,7 +2,7 @@
 #include <fstream>
 #include <sstream>
 
-std::string VertexPixel3D::folderPath = "Template/VP3D";
+std::string VertexPixel3D::folderPath = "ShaderCreater/Template/VP3D";
 
 std::string VertexPixel3D::ReadFileContent(const std::ifstream& file)
 {

@@ -1,6 +1,7 @@
 #include "VertexPixel2D.h"
 #include <fstream>
 #include <sstream>
+#include <d3d12.h>
 
 std::string VertexPixel2D::folderPath = "ShaderCreater/Template/VP2D";
 
@@ -16,6 +17,24 @@ std::string VertexPixel2D::ReadFileContent(const std::ifstream& file)
 	}
 
 	return fileContent;
+}
+
+void VertexPixel2D::WriteInputLayoutToIni(std::ofstream& file)
+{
+	// セマンティックス、フォーマット、インデックスの順
+	file << "IL ";
+	file << "POSITION";
+	file << " ";
+	file << (int)DXGI_FORMAT_R32G32B32_FLOAT;
+	file << " ";
+	file << 0 << std::endl;
+
+	file << "IL ";
+	file << "TEXCOORD";
+	file << " ";
+	file << (int)DXGI_FORMAT_R32G32_FLOAT;
+	file << " ";
+	file << 0 << std::endl;
 }
 
 void VertexPixel2D::WriteHeader(std::ofstream& file)

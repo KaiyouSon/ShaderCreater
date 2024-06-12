@@ -88,7 +88,7 @@ int main()
 	}
 
 	// 書き込み
-	VP3D::WriteHeader(hlslFile);
+	VP2D::WriteHeader(hlslFile);
 
 	// HLSLファイルを閉じます
 	hlslFile.close();
@@ -96,6 +96,8 @@ int main()
 	// 設定ファイル
 	std::string iniPath = folderPath.string() + "/" + filename + ".ini";
 	std::ofstream iniFile(iniPath);
+
+	VP2D::WriteInputLayoutToIni(iniFile);
 
 	// ビットを元にソースファイルを作成する
 	for (uint32_t i = 0; i < MaxEnumCount; i++)
@@ -121,14 +123,14 @@ int main()
 			{
 				// 書き込み
 				std::string code;
-				VP3D::WriteVertex(hlslFile, filename + headerExt);
+				VP2D::WriteVertex(hlslFile, filename + headerExt);
 				hlslFile << code;
 			}
 			else if (i == (uint32_t)ShaderType::Pixel - 1)
 			{
 				// 書き込み
 				std::string code;
-				VP3D::WritePixel(hlslFile, filename + headerExt);
+				VP2D::WritePixel(hlslFile, filename + headerExt);
 				hlslFile << code;
 			}
 
